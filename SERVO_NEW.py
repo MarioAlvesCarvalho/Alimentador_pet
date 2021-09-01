@@ -34,6 +34,9 @@ try:
             servoMotor.ChangeDutyCycle(3.5)
             time.sleep(tempo)
             
+            print ("PARANDO SERVO")
+            servoMotor.ChangeDutyCycle(0.0)
+            
       else:
            GPIO.output(led, False)
           
